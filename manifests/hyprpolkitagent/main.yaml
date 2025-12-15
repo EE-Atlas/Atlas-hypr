@@ -1,0 +1,10 @@
+actions:
+  - procedure: paru.install
+    info: "Installing hyprpolkitagent"
+    package: ["hyprpolkitagent"]
+
+  - procedure: shell.run
+    info: "Changing shell for user"
+    command: systemctl
+    args: ["enable", "--now", "hyprpolkitagent.service"]
+    privileged: true

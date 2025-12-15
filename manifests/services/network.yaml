@@ -1,0 +1,11 @@
+actions:
+  - procedure: paru.install
+    info: "Installing nm-connection-editor"
+    package:
+      - nm-connection-editor
+
+  - procedure: shell.run
+    info: "Enable autostart for NetworkManager"
+    command: systemctl
+    args: ["enable", "--now", "NetworkManager"]
+    privileged: true
