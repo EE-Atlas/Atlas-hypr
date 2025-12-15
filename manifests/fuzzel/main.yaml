@@ -1,5 +1,9 @@
 actions:
   - procedure: paru.install
     info: Installing fuzzel
-    package:
-      - fuzzel
+    package: ["fuzzel"]
+
+  - procedure: os.symlink
+    info: Creating fuzzel configuration symlink
+    src: "./files/fuzzel"
+    dst: "{{ user.config }}/fuzzel"

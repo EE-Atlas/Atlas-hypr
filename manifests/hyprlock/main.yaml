@@ -2,3 +2,12 @@ actions:
   - procedure: paru.install
     info: Installing hyprlock
     package: ["hyprlock"]
+
+  - procedure: paru.install
+    info: Installing clock_rs
+    package: ["clock-rs-git"]
+
+  - procedure: os.symlink
+    info: Creating clock_rs configuration symlink
+    src: "./files/clock-rs"
+    dst: "{{ user.config }}/clock-rs"

@@ -1,5 +1,17 @@
 depends:
-  - Atlas-dots
-  - sddm
-  - hyprland
+  - git+https://github.com/EE-Atlas/Atlas-dots
+  - dolphin
+  - fonts
   - fuzzel
+  - hypridle
+  - hyprland
+  - hyprlock
+  - hyprpaper
+  - hyprpicker
+  - hyprpolkitagent
+  - hyprshot
+  - nwg-displays
+  - sddm
+  - services
+  - swaync
+  - waybar
