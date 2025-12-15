@@ -1,4 +1,0 @@
-[submodule "manifests/Atlas-dots"]
-	path = manifests/Atlas-dots
-	url = https://github.com/EE-Atlas/Atlas-dots
-	branch = main
