@@ -5,5 +5,5 @@ actions:
 
   - procedure: os.symlink
     info: Creating waybar config symlink
-    source: "./files/waybar"
-    target: "{{ user.config }}/waybar"
+    src: "./files/waybar"
+    dst: "{{ user.config }}/waybar"

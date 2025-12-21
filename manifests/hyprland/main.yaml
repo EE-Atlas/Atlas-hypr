@@ -2,6 +2,7 @@ actions:
   - procedure: aur.install
     info: Installing hyprland
     packages: ["hyprland-git"]
+    skip_condition: hyprland --version
 
   - procedure: os.symlink
     info: Creating symlink for hyprland config
