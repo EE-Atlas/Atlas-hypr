@@ -1,4 +1,4 @@
 actions:
-  - procedure: paru.install
-    info: "Installing brightnessctl"
+  - procedure: aur.install
+    info: Installing brightnessctl
     package: ["brightnessctl"]

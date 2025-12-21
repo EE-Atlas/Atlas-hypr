@@ -1,9 +1,9 @@
 actions:
-  - procedure: paru.install
+  - procedure: aur.install
     info: Installing hyprlock
     package: ["hyprlock"]
 
-  - procedure: paru.install
+  - procedure: aur.install
     info: Installing clock_rs
     package: ["clock-rs-git"]
 

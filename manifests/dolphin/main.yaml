@@ -1,6 +1,6 @@
 actions:
-  - procedure: paru.install
-    info: Installing dolphin file manager
+  - procedure: aur.install
+    info: Installing dolphin file manager with plugins
     package:
       - dolphin
       - dolphin-plugins

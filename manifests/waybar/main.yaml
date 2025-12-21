@@ -1,0 +1,9 @@
+actions:
+  - procedure: aur.install
+    info: Installing waybar
+    package: ["waybar"]
+
+  - procedure: os.symlink
+    info: Creating waybar config symlink
+    source: "./files/waybar"
+    target: "{{ user.config }}/waybar"

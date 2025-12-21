@@ -1,4 +1,4 @@
 actions:
-  - procedure: paru.install
-    info: Installing fuzzel
+  - procedure: aur.install
+    info: Installing hyprpaper
     package: ["hyprpaper"]

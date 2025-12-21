@@ -1,19 +1,23 @@
 actions:
-  - procedure: paru.install
+  - procedure: aur.install
     info: Installing hyprland
     package: ["hyprland-git"]
 
   - procedure: os.symlink
-    info: "Creating symlink for hyprland config"
+    info: Creating symlink for hyprland config
     src: "./files/hypratlas"
     dst: "{{ user.config }}/hypr/hypratlas"
 
+  - procedure: os.remove
+    info: Removing old backup of hyprland.conf
+    src: "{{ user.config }}/hypr/.hyprland.backup"
+
   - procedure: os.move
-    info: "Backuping old hyprland.conf"
+    info: Backuping old hyprland.conf
     src: "{{ user.config }}/hypr/hyprland.conf"
     dst: "{{ user.config }}/hypr/.hyprland.backup"
 
   - procedure: os.copy
-    info: "Copying preferred hyprland.conf"
+    info: Copying preferred hyprland.conf
     src: "./files/hyprland.conf"
     dst: "{{ user.config }}/hypr/hyprland.conf"

@@ -1,6 +1,6 @@
 actions:
-  - procedure: paru.install
-    info: "Installing pipewire"
+  - procedure: aur.install
+    info: Installing pipewire
     package:
       - pipewire
       - pipewire-pulse

@@ -1,8 +1,8 @@
 actions:
-  - procedure: paru.install
-    info: "Installing font `otf-font-awesome`"
+  - procedure: aur.install
+    info: Installing font `otf-font-awesome`
     package: ["otf-font-awesome"]
 
-  - procedure: paru.install
-    info: "Installing font `nerd-fonts`"
+  - procedure: aur.install
+    info: Installing font `nerd-fonts`
     package: ["nerd-fonts"]

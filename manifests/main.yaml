@@ -1,5 +1,5 @@
 depends:
-  - git+https://github.com/EE-Atlas/Atlas-dots
+  - git+https://github.com/EE-Atlas/Atlas-dots@tag=v1.0.0
   - dolphin
   - fonts
   - fuzzel
