@@ -1,8 +1,8 @@
 actions:
   - procedure: aur.install
     info: Installing font `otf-font-awesome`
-    package: ["otf-font-awesome"]
+    packages: ["otf-font-awesome"]
 
   - procedure: aur.install
     info: Installing font `nerd-fonts`
-    package: ["nerd-fonts"]
+    packages: ["nerd-fonts"]

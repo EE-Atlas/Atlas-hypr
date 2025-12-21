@@ -1,4 +1,4 @@
 actions:
   - procedure: aur.install
     info: Installing hypridle
-    package: ["hypridle"]
+    packages: ["hypridle"]

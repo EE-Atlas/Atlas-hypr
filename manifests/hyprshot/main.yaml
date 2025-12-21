@@ -1,4 +1,4 @@
 actions:
   - procedure: aur.install
     info: Installing hyprshot
-    package: ["hyprshot"]
+    packages: ["hyprshot"]

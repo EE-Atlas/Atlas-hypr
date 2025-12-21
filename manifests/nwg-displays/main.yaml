@@ -1,4 +1,4 @@
 actions:
   - procedure: aur.install
     info: Installing nwg-displays
-    package: ["nwg-displays"]
+    packages: ["nwg-displays"]

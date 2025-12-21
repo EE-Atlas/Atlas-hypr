@@ -1,4 +1,4 @@
 actions:
   - procedure: aur.install
     info: Installing swaync
-    package: ["swaync"]
+    packages: ["swaync"]

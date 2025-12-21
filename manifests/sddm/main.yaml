@@ -1,4 +1,4 @@
 actions:
   - procedure: aur.install
     info: Installing sddm
-    package: ["sddm"]
+    packages: ["sddm"]

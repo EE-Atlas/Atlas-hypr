@@ -1,11 +1,11 @@
 actions:
   - procedure: aur.install
     info: Installing hyprlock
-    package: ["hyprlock"]
+    packages: ["hyprlock"]
 
   - procedure: aur.install
     info: Installing clock_rs
-    package: ["clock-rs-git"]
+    packages: ["clock-rs-git"]
 
   - procedure: os.symlink
     info: Creating clock_rs configuration symlink

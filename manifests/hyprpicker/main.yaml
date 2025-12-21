@@ -1,4 +1,4 @@
 actions:
   - procedure: aur.install
     info: Installing hyprpicker
-    package: ["hyprpicker"]
+    packages: ["hyprpicker"]
