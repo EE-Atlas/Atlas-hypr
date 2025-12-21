@@ -6,5 +6,4 @@ actions:
   - procedure: shell.run
     info: "Changing shell for user"
     command: systemctl
-    args: ["enable", "--now", "hyprpolkitagent.service"]
-    privileged: true
+    args: ["enable", "--user", "--now", "hyprpolkitagent"]
