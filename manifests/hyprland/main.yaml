@@ -13,6 +13,11 @@ actions:
     info: Removing old backup of hyprland.conf
     src: "{{ user.config }}/hypr/.hyprland.backup"
 
+  - procedure: os.symlink
+    info: Creating symlink for monitors.conf
+    src: "./files/monitors.conf"
+    dst: "{{ user.config }}/hypr/monitors.conf"
+
   - procedure: os.move
     info: Backuping old hyprland.conf
     src: "{{ user.config }}/hypr/hyprland.conf"
