@@ -4,26 +4,22 @@ actions:
     packages: ["hyprland-git"]
     skip_condition: hyprland --version
 
-  - procedure: os.symlink
-    info: Creating symlink for hyprland config
-    src: "./files/hypratlas"
-    dst: "{{ user.config }}/hypr/hypratlas"
-
   - procedure: os.remove
     info: Removing old backup of hyprland.conf
     src: "{{ user.config }}/hypr/.hyprland.backup"
 
-  - procedure: os.symlink
-    info: Creating symlink for monitors.conf
+  - procedure: os.copy
+    info: Copying monitors.conf
     src: "./files/monitors.conf"
     dst: "{{ user.config }}/hypr/monitors.conf"
+    skip_condition: cat ~/.config/hypr/monitors.conf
 
   - procedure: os.move
     info: Backuping old hyprland.conf
     src: "{{ user.config }}/hypr/hyprland.conf"
     dst: "{{ user.config }}/hypr/.hyprland.backup"
 
-  - procedure: os.copy
-    info: Copying preferred hyprland.conf
+  - procedure: os.symlink
+    info: Add symlink to hyprland.conf
     src: "./files/hyprland.conf"
     dst: "{{ user.config }}/hypr/hyprland.conf"
