@@ -2,3 +2,13 @@ actions:
   - procedure: aur.install
     info: Installing hypridle
     packages: ["hypridle"]
+
+  - procedure: os.symlink
+    info: Creating symlinks for hypridle
+    src: "./files/hypridle.conf"
+    dst: "{{ user.config }}/hypr/hypridle.conf"
+
+  - procedure: shell.run
+    info: Enable hypridle service
+    command: systemctl
+    args: ["--user", "enable", "--now", "hypridle.service"]
