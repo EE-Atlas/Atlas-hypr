@@ -89,11 +89,6 @@
     border-bottom-right-radius: 6px;
 }
 
-/* Simple Hover effect for clock module - BRIGHTER COLOR */
-#clock:hover {
-    background-color: rgba(153, 209, 219, 0.1); /* Brighter highlight */
-}
-
 /* --- Right Modules (Single, Seamless Bar ) --- */
 #bluetooth,
 #pulseaudio,
@@ -118,8 +113,13 @@
 #backlight:hover,
 #network:hover,
 #custom-lock:hover,
+#custom-notification:hover,
+#custom-colorpicker:hover,
+#clock:hover,
+#memory:hover,
+#temperature:hover,
 #battery:hover {
-    background-color: rgb(41, 42, 53);
+    background-color: #151515;
 }
 
 #bluetooth {
@@ -132,11 +132,6 @@
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
 }
-/*#battery {
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    margin-right: 7px;
-}*/
 
 #network.disconnected {
     color: #dc2f2f;
