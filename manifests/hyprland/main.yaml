@@ -23,3 +23,8 @@ actions:
     info: Add symlink to hyprland.conf
     src: "./files/hyprland.conf"
     dst: "{{ user.config }}/hypr/hyprland.conf"
+
+  - procedure: os.symlink
+    info: Add symlink to wallpapers directory
+    src: "./files/wallpapers"
+    dst: "{{ user.config }}/hypr/wallpapers"

@@ -3,11 +3,7 @@ actions:
     info: Installing hyprlock
     packages: ["hyprlock"]
 
-  - procedure: aur.install
-    info: Installing clock_rs
-    packages: ["clock-rs-git"]
-
   - procedure: os.symlink
-    info: Creating clock_rs configuration symlink
-    src: "./files/clock-rs"
-    dst: "{{ user.config }}/clock-rs"
+    info: Creating hyprlock configuration symlink
+    src: "./files/hyprlock.conf"
+    dst: "{{ user.config }}/hypr/hyprlock.conf"
