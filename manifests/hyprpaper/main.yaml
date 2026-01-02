@@ -2,3 +2,8 @@ actions:
   - procedure: aur.install
     info: Installing hyprpaper
     packages: ["hyprpaper"]
+
+  - procedure: os.symlink
+    info: Creating hyprpaper config symlink
+    src: "./files/hyprpaper.conf"
+    dst: "{{ user.config }}/hypr/hyprpaper.conf"
